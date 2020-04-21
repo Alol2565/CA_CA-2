@@ -31,3 +31,21 @@
 # Compile of SE16to32.sv was successful.
 # Compile of MUX.sv was successful.
 # 8 compiles, 0 failed with no errors. 
+# Compile of 32badder.sv failed with 1 errors.
+# Compile of 32bregister.sv failed with 1 errors.
+# Compile of alu.sv failed with 1 errors.
+# Compile of controller.sv failed with 1 errors.
+# Compile of memory.v failed with 1 errors.
+# Compile of RegisterFile.v failed with 1 errors.
+# Compile of SE16to32.sv failed with 1 errors.
+# Compile of MUX32.sv failed with 1 errors.
+# 8 compiles, 8 failed with 8 errors. 
+# Compile of 32badder.sv failed with 1 errors.
+# Compile of 32bregister.sv failed with 1 errors.
+# Compile of alu.sv failed with 1 errors.
+# Compile of controller.sv failed with 1 errors.
+# Compile of memory.v failed with 1 errors.
+# Compile of RegisterFile.v failed with 1 errors.
+# Compile of SE16to32.sv failed with 1 errors.
+# Compile of MUX32.sv failed with 1 errors.
+# 8 compiles, 8 failed with 8 errors. 
