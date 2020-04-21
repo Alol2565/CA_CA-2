@@ -3,43 +3,131 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\Alol\Documents\GitHub\CA_CA-2
-vMemory
-Z1 IZLJh3iiTF9m=eFB<6WgOH3
-Z2 V?iUQ>J]WW5:]bkG63dUY93
-Z3 dC:\Users\Alol\Documents\GitHub\CA_CA-2
-Z4 w1587499266
-Z5 8C:/Users/Alol/Documents/GitHub/CA_CA-2/memory.v
-Z6 FC:/Users/Alol/Documents/GitHub/CA_CA-2/memory.v
-L0 2
-Z7 OV;L;10.1d;51
+valu
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 I5=4Y_HG252=[Y4iRMPR4X2
+Z3 V>nQ@IfX=MYh1cMMfEQI2>1
+S1
+Z4 dE:\daneshgah\term 6\Computer Architecture\ca2 git\CA_CA-2
+Z5 w1587157004
+Z6 8E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/alu.sv
+Z7 FE:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/alu.sv
+L0 3
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
-Z9 n@memory
+Z9 o-work work -sv -O0
+Z10 !s100 =K`fKgl0CA6>2>2MK2;2h0
+Z11 !s105 alu_sv_unit
+Z12 !s108 1587509392.454000
+Z13 !s107 E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/alu.sv|
+Z14 !s90 -reportprogress|300|-work|work|-sv|E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/alu.sv|
 !i10b 1
-Z10 !s100 Z=zW]MX^]IL]<@cRWWR:82
 !s85 0
-Z11 !s108 1587507496.596000
-Z12 !s107 C:/Users/Alol/Documents/GitHub/CA_CA-2/memory.v|
-Z13 !s90 -reportprogress|300|-work|work|C:/Users/Alol/Documents/GitHub/CA_CA-2/memory.v|
+!s101 -O0
+vb32adder
+R1
+Z15 I]SWg8eY`NTkzF?B]V_WZi3
+Z16 V[<PiV4769Y7dg=3baf>423
+S1
+R4
+Z17 w1587155350
+Z18 8E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/32badder.sv
+Z19 FE:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/32badder.sv
+L0 3
+R8
+r1
+31
+R9
+Z20 !s100 3C9I8S;oH:JfJ7]P=K]]m3
+Z21 !s105 _32badder_sv_unit
+Z22 !s108 1587509391.981000
+Z23 !s107 E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/32badder.sv|
+Z24 !s90 -reportprogress|300|-work|work|-sv|E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/32badder.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vb32reg
+R1
+Z25 ISIkbm^SanQkCIdMBiV?iL3
+Z26 V^Q_?Y[jRZ1MDc`>6P@fYd3
+S1
+R4
+Z27 w1587155389
+Z28 8E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/32bregister.sv
+Z29 FE:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/32bregister.sv
+L0 3
+R8
+r1
+31
+R9
+Z30 !s100 gC_4Mhz[3@K]Wfm<AVYjV0
+Z31 !s105 _32bregister_sv_unit
+Z32 !s108 1587509392.328000
+Z33 !s107 E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/32bregister.sv|
+Z34 !s90 -reportprogress|300|-work|work|-sv|E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/32bregister.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vMemory
+Z35 If7_1IFWdIf;a3m>EnJgmz3
+Z36 V?iUQ>J]WW5:]bkG63dUY93
+R4
+Z37 w1587508367
+Z38 8E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/memory.v
+Z39 FE:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/memory.v
+L0 2
+R8
+r1
+31
+Z40 o-work work -O0
+Z41 n@memory
+Z42 !s100 YBd?bl<h2;:a<_GKSP[J10
+Z43 !s108 1587509392.605000
+Z44 !s107 E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/memory.v|
+Z45 !s90 -reportprogress|300|-work|work|E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/memory.v|
+!i10b 1
+!s85 0
 !s101 -O0
 vRegisterFile
 !i10b 1
-!s100 U767cS54F82WAhdG20d^=1
-I`:=]gcH`8k7G08:bQh;fU1
-VgdcIKk=[`a3zghh7[>H:@0
-R3
+!s100 @=LoK_eHPn1IT<f3>=d@X2
+I@nZ?BC0FVIQObDF]NzXXN3
+VTI5IJFMGSzo2c>`N0Y1>Y1
 R4
-8C:/Users/Alol/Documents/GitHub/CA_CA-2/RegisterFile.v
-FC:/Users/Alol/Documents/GitHub/CA_CA-2/RegisterFile.v
+w1587511452
+8E:\daneshgah\term 6\Computer Architecture\ca2 git\CA_CA-2\RegisterFile.v
+FE:\daneshgah\term 6\Computer Architecture\ca2 git\CA_CA-2\RegisterFile.v
 L0 2
-R7
+R8
 r1
 !s85 0
 31
-!s108 1587507496.687000
-!s107 C:/Users/Alol/Documents/GitHub/CA_CA-2/RegisterFile.v|
-!s90 -reportprogress|300|-work|work|C:/Users/Alol/Documents/GitHub/CA_CA-2/RegisterFile.v|
+!s108 1587511453.833000
+!s107 E:\daneshgah\term 6\Computer Architecture\ca2 git\CA_CA-2\RegisterFile.v|
+!s90 -reportprogress|300|-work|work|E:\daneshgah\term 6\Computer Architecture\ca2 git\CA_CA-2\RegisterFile.v|
 !s101 -O0
+R40
+Z46 n@register@file
+vse16to32
+R1
+Z47 Ied25Bg2l7K5hnK9NJH4NR2
+Z48 Vj2Le9:nLLB<ajooRn>^U22
+S1
+R4
+Z49 w1587153318
+Z50 8E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/SE16to32.sv
+Z51 FE:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/SE16to32.sv
+L0 3
 R8
-n@register@file
+r1
+31
+R9
+Z52 !s100 gNL6oifaWn_CIOV;Y;5kA3
+Z53 !s105 SE16to32_sv_unit
+Z54 !s108 1587509392.757000
+Z55 !s107 E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/SE16to32.sv|
+Z56 !s90 -reportprogress|300|-work|work|-sv|E:/daneshgah/term 6/Computer Architecture/ca2 git/CA_CA-2/SE16to32.sv|
+!i10b 1
+!s85 0
+!s101 -O0
