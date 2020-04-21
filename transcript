@@ -5,3 +5,29 @@
 # Compile of memory.v was successful.
 # Compile of RegisterFile.v was successful.
 # 3 compiles, 0 failed with no errors. 
+# Compile of 32badder.sv was successful.
+# Compile of 32bregister.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of memory.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of SE16to32.sv was successful.
+# 7 compiles, 0 failed with no errors. 
+# Compile of 32badder.sv was successful.
+# Compile of 32bregister.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of memory.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of SE16to32.sv was successful.
+# Compile of MUX.sv failed with 1 errors.
+# 8 compiles, 1 failed with 1 error. 
+# Compile of 32badder.sv was successful.
+# Compile of 32bregister.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of memory.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of SE16to32.sv was successful.
+# Compile of MUX.sv was successful.
+# 8 compiles, 0 failed with no errors. 
