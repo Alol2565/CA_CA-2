@@ -4,7 +4,7 @@ module datamem(input[31:0] address, writeData, input clk,memRead, memWrite, outp
   reg [31:0] memoryData[0:16383];
    initial
   begin
-   $readmemh ("mem.data", memoryData);
+   $readmemb ("mem.data", memoryData);
   end
   always@(posedge memRead,posedge memWrite )begin
     if(memRead)
