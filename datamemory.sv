@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-module datamem(input[31:0] address, writeData, input clk,memRead, memWrite, output[31:0] readdata);
+module datamem(input[31:0] address, writeData,memRead, memWrite, output[31:0] readdata);
   reg[31:0] daTa;
   reg [31:0] memoryData[0:16383];
    initial
