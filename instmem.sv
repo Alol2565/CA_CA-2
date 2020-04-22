@@ -11,4 +11,3 @@ module Memory(input[31:0] address, input clk,rst, output[31:0] inst);
   end
   assign inst = daTa;
 endmodule
-
