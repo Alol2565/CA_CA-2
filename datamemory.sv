@@ -1,7 +1,7 @@
 `timescale 1ns/1ns
 module datamem(input[31:0] address, writeData, input clk,memRead, memWrite, output[31:0] readdata);
   reg[31:0] daTa;
-  reg [31:0] memoryData[0:1023];
+  reg [31:0] memoryData[0:16383];
   integer i;
   initial begin
     for (i = 0; i < 1024; i = i + 1) begin
@@ -10,9 +10,9 @@ module datamem(input[31:0] address, writeData, input clk,memRead, memWrite, outp
   end
   always@(posedge memRead,posedge memWrite )begin
     if(memRead)
-      daTa = memoryData[address];
+      daTa = memoryData[address << 2];
     if(memWrite)
-      memoryData[address] = writeData;
+      memoryData[address << 2] = writeData;
   end
   assign readdata = daTa;
 endmodule
