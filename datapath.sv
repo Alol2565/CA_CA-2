@@ -23,7 +23,7 @@ module datapath( input clk ,rst,
     assign topc1 = pcsrc ? add2out : add1out;
     assign topc2 = jr ? aluout : shift2out;
     assign pcin = jmp ? topc2 : topc1;
-    assign shift2out = {add1out[31:28],inst[25:0]>>2};
+    assign shift2out = {add1out[31:28],inst[25:0],2'b00};
     assign shift1out = seout << 2;
     assign alub = alusrc ? seout : regd2;
     assign wregin = selreg? n31 : regdst ? inst[15:11] : inst[20:16];
