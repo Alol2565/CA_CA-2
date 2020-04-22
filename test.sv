@@ -5,7 +5,7 @@ module tb();
   initial clk = 0;
   always
     #50 clk = !clk;
-  cpu uut( clk ,rst);
+  cpu uut(clk, rst);
   initial begin
    rst =  1;
    #200
