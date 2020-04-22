@@ -1,16 +1,18 @@
 `timescale 1ns/1ns
-module Memory(input clk ,rst ,input[31:0] address, writedata, input memRead, memWrite, output[31:0] readdata);
-  reg[15:0] daTa;
+module Memory(input[31:0] address, writeData, input memRead, memWrite, output[31:0] readdata);
+  reg[31:0] daTa;
   reg [31:0] memoryData[0:1023];
+  integer i;
   initial begin
-  
+    for (i = 0; i < 1024; i = i + 1) begin
+       memoryData[i] <= 32'b0;
+      end
   end
   always@(posedge memRead,posedge memWrite)begin
     if(memRead)
-      daTa = memoryData[dataAdd];
+      daTa = memoryData[address];
     if(memWrite)
-      memoryData[dataAdd] = writeData;
+      memoryData[address] = writeData;
   end
-  assign data = daTa;
-  assign instruction = memoryData[instAdd];
+  assign readdata = daTa;
 endmodule
