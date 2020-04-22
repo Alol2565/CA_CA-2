@@ -1,8 +1,8 @@
 `timescale 1ns/1ns
 module datapath( input clk ,rst,
-              input selreg,regdst,
+                      selreg,regdst,
                       alusrc,
-                      memread, memwrite
+                      memread, memwrite ,regwrite,memtoreg,
                       pcsrc, jal, jr,jmp,
               input [2:0] aluopration,       
               output [5:0] opcode ,opr,
@@ -14,7 +14,7 @@ module datapath( input clk ,rst,
                 inst, regd1, regd2 , wregd,
                 alub ,seout, aluout,
                 add1out,add2out,
-                datamemout,memtoreg,
+                datamemout,
                 shift1out ,shift2out,
                 topc1,topc2;
   logic [4:0] wregin;
@@ -30,7 +30,7 @@ module datapath( input clk ,rst,
     assign wregd = jal ? add1out : memtoreg ? datamemout : aluout;
     b32reg PC(pcin,clk, rst, pcout);
     instmem IM(pcout ,clk,rst,inst);
-    RegisterFile RF(clk,rst,RegWrite, inst[25:21],inst[20:16],Wregin, wregd, regd1,regd2);
+    RegisterFile RF(clk,rst,regwrite, inst[25:21],inst[20:16],Wregin, wregd, regd1,regd2);
     alu ALU(regd1 ,alub ,aluopration, aluout ,z);
     datamem DM(aluout, regd2, memRead, memWrite, datamemout);
     se16to32 SE(inst[15:0], seout);
