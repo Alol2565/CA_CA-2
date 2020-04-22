@@ -15,8 +15,8 @@ module RegisterFile(input clk,rst,RegWrite, input[4:0] ReadReg1,ReadReg2,WriteRe
       end
     end
     if(RegWrite) begin
-        if(Writereg != 5'd0) begin
-          if(Writereg != 5'd31)
+        if(WriteReg != 5'd0) begin
+          if(WriteReg != 5'd31)
             Register[WriteReg] <= WriteData;
       end
     end

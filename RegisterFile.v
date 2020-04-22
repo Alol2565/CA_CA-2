@@ -1,12 +1,8 @@
 `timescale 1ns/1ns
 module RegisterFile(input clk,rst,RegWrite, input[4:0] ReadReg1,ReadReg2,WriteReg, input[31:0] WriteData, output [31:0]ReadData1,ReadData2);
   reg [1:0] winData;
-  reg [31:0] Register[0:7];
+  reg [31:0] Register[0:31];
   integer i;
-  
-    
-    
-
 	always@(posedge clk, posedge rst) begin
       Register[0] <= 32'b0;
     if(rst) begin
