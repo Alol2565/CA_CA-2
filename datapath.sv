@@ -32,7 +32,7 @@ module datapath( input clk ,rst,
     instmem IM(pcout ,clk,rst,inst);
     RegisterFile RF(clk,rst,regwrite, inst[25:21],inst[20:16],wregin, wregd, regd1,regd2);
     alu ALU(regd1 ,alub ,aluopration, aluout ,z);
-    datamem DM(aluout, regd2, memread, memwrite, datamemout);
+    datamem DM(aluout, regd2,clk, memread, memwrite, datamemout);
     se16to32 SE(inst[15:0], seout);
     b32adder A1(n4 ,pcout, add1out);
     b32adder A2(add1out,shift1out, add2out);
