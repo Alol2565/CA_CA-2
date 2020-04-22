@@ -8,7 +8,7 @@ module datamem(input[31:0] address, writeData, input clk,memRead, memWrite, outp
        memoryData[i] <= 32'b0;
       end
   end
-  always@(posedge clk)begin
+  always@(posedge memRead,posedge memWrite )begin
     if(memRead)
       daTa = memoryData[address];
     if(memWrite)
