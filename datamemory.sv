@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-module Memory(input[31:0] address, writeData, input memRead, memWrite, output[31:0] readdata);
+module datamem(input[31:0] address, writeData, input clk,memRead, memWrite, output[31:0] readdata);
   reg[31:0] daTa;
   reg [31:0] memoryData[0:1023];
   integer i;
@@ -8,7 +8,7 @@ module Memory(input[31:0] address, writeData, input memRead, memWrite, output[31
        memoryData[i] <= 32'b0;
       end
   end
-  always@(posedge memRead,posedge memWrite)begin
+  always@(posedge clk)begin
     if(memRead)
       daTa = memoryData[address];
     if(memWrite)
