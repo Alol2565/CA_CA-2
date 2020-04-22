@@ -15,7 +15,7 @@ int main()
     s1 += "1";
     inst += "0";
     fstream input;
-    input.open("mem.txt",fstream::out);
+    input.open("mem.data",fstream::out);
     for(int i = 0; i < 16384 ;i++)
     {
         if (i == 1000)

@@ -6,7 +6,7 @@ module instmem(input[31:0] address, input clk,rst, output[31:0] inst);
   begin
    $readmemh ("inst.data", memoryData);
   end
-  always@(posedge clk ,posedge rst)begin
+  always@(posedge clk)begin
       daTa = memoryData[address << 2];
   end
   assign inst = daTa;
