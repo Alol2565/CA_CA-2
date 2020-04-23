@@ -5,7 +5,7 @@ module memtb();
   reg rst,clk, memread, memwrite;
   reg [31:0] address, Writedata, readdata;
   initial begin
-  clk = 0;
+  clk = 1;
   memread = 0;
   memwrite = 0;
   address = 32'b0;

@@ -6,16 +6,21 @@ module datamem(input[31:0] address, writeData,input clk, memRead, memWrite, outp
    initial
   begin
    $readmemb ("mem.data", memoryData);
-   daTa = 32'd0;
+   daTa = 32'b0;
   end
   //posedge memWrite , posedge memRead
-  always@(negedge clk)begin
+  always@(posedge clk)begin
     
-    if(memRead)
+    if(memRead)begin
         daTa <= memoryData[addr];
-    if(memWrite)
+      end
+    if(memRead == 1'b0)begin
+      daTa <= 32'b0;
+    end
+    if(memWrite)begin
         memoryData[addr] <= writeData;
         $writememb ("mem.data", memoryData);
+      end
     end
     assign readdata = daTa;
 endmodule
