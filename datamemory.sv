@@ -15,6 +15,7 @@ module datamem(input[31:0] address, writeData,input clk, memRead, memWrite, outp
         daTa <= memoryData[addr];
     if(memWrite)
         memoryData[addr] <= writeData;
+        $writememb ("mem.data", memoryData);
     end
     assign readdata = daTa;
 endmodule
