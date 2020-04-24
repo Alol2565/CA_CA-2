@@ -1,0 +1,20 @@
+                addi R10 R0 80
+                add R1 R0 R0
+		add R8 R0 R0
+                add R2 R0 R0
+                add R3 R0 R0
+FOR_LOOP        beq R1 R10 END_FOR
+                lw R4 1000(R1)
+                slt R5 R4 R2
+                bne R5 R0 CONTINUE_LOOP
+                add R2 R4 R0
+                add R3 R1 R0
+CONTINUE_LOOP   addi R1 R1 4
+		addi R8 R8 1
+                j FOR_LOOP
+END_LOOP        sw R2 2000(R0)
+                sw R3 2004(R0)                
+
+
+            
+            
