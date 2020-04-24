@@ -5,7 +5,7 @@ module tb();
   reg [4:0] ReadReg1,ReadReg2,WriteReg;
   reg [31:0] WriteData ,ReadData1,ReadData2;
   initial begin
-  clk = 0;
+  clk = 1;
 //  ReadReg1 =4'd3 ;
   //ReadReg2 = 4'd4;
   //WriteReg =4'd5;
@@ -20,7 +20,7 @@ end
 
   initial begin
    rst =  1;
-   #200
+   #120
    rst = 0;
   // #30
   // RegWrite = 1;
